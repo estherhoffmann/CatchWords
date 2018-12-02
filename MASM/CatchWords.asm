@@ -19,11 +19,11 @@ INCLUDE ../Macros.inc
   		 BYTE 186, "                                                                              ", 186
   		 BYTE 186, "                                                                              ", 186
   		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                   Escolha:                                   ", 186
+  		 BYTE 186, "                                    Choose:                                   ", 186
   		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                               (ENTER) - JOGAR                                ", 186
-  		 BYTE 186, "                     (BARRA DE ESPACO) - RULES                                ", 186
-  		 BYTE 186, "                                 (ESC) - SAIR                                 ", 186
+  		 BYTE 186, "                               (ENTER) - PLAY                                 ", 186
+  		 BYTE 186, "                               (SPACE) - INSTRUCTIONS                         ", 186
+  		 BYTE 186, "                                 (ESC) - EXIT                                 ", 186
   		 BYTE 186, "                                                                              ", 186
   		 BYTE 186, "                                                                              ", 186
   		 BYTE 186, "                                                                              ", 186
@@ -31,26 +31,26 @@ INCLUDE ../Macros.inc
   		 BYTE 200, 78 DUP(205), 188, 0
   RULES BYTE 201, 78 DUP(205), 187
       BYTE 186, "                                                                              ", 186
+      BYTE 186, "                                 INSTRUCTIONS:                                ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                                 COMO JOGAR:                                  ", 186
+      BYTE 186, "                1", 248, " - Stretch your fingers                                     ", 186
       BYTE 186, "                                                                              ", 186
+      BYTE 186, "                2", 248, " - Try to form a (portuguese) word with the                 ", 186
+      BYTE 186, "                     falling letters                                          ", 186
       BYTE 186, "                                                                              ", 186
+      BYTE 186, "                3", 248, " - Type it, slowly!                                         ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                1", 248, " - Prepare-se para a diversao                               ", 186
+      BYTE 186, "                4", 248, " - If you fail, it's GAME OVER for you.                     ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                2", 248, " - Stretch your fingers                                     ", 186
+      BYTE 186, "                                  *ATTENTION!*                                ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                3", 248, " - Observe as letras que caem pela tela                     ", 186
+      BYTE 186, "                 ->  THE GAME DO NOT CONTAIN VERBS OR ACCENTS                 ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                4", 248, " - Pressione as letras no teclado (na ordem correta)        ", 186
-      BYTE 186, "                     para formar a palavra descoberta                         ", 186
+      BYTE 186, "        ->  EACH LEVEL WAS A SPECIAL WORD: BIGGER, THAT GIVES YOU MORE        ", 186
+      BYTE 186, "              POINTS! BUT THIS ONE YOU CAN FAIL AND KEEP PLAYING ;D           ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                5", 248, " - EAT SLEEP PLAY REPEAT                                    ", 186
-      BYTE 186, "                                                                              ", 186
-      BYTE 186, "                                                                              ", 186
-      BYTE 186, "                                                                              ", 186
-      BYTE 186, "                                                                              ", 186
-      BYTE 186, "                         (BARRA DE ESPACO) - VOLTAR                           ", 186
+      BYTE 186, "                                (SPACE) - RETURN                              ", 186
+      BYTE 186, "                                  (ESC) - EXIT                                ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 200, 78 DUP(205), 188, 0
   NextLevel BYTE 201, 78 DUP(205), 187
@@ -118,8 +118,8 @@ INCLUDE ../Macros.inc
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                              (ENTER) - MENU PRINCIPAL                        ", 186
-      BYTE 186, "                                (ESC) - SAIR                                  ", 186
+      BYTE 186, "                              (ENTER) - MAIN MENU                             ", 186
+      BYTE 186, "                                (ESC) - EXIT GAME                             ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 200, 78 DUP(205), 188, 0
     Correct BYTE 201, 78 DUP(205), 187
@@ -171,24 +171,24 @@ INCLUDE ../Macros.inc
   WIN BYTE 201, 78 DUP(205), 187
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "              ____   ____ ____   ____ ____    ___ ____   _______              ", 186
-      BYTE 186, "             |    \ /    |    \ /    |    \  /  _|    \ / ___|  |             ", 186
-      BYTE 186, "             |  o  |  o  |  D  |  o  |  o  )/  [_|  _  (   \_|  |             ", 186
-      BYTE 186, "             |   _/|     |    /|     |     |    _|  |  |\__  |__|             ", 186
-      BYTE 186, "             |  |  |  _  |    \|  _  |  O  |   [_|  |  |/  \ |__              ", 186
-      BYTE 186, "             |  |  |  |  |  .  |  |  |     |     |  |  |\    |  |             ", 186
-      BYTE 186, "             |__|  |__|__|__|\_|__|__|_____|_____|__|__| \___|__|             ", 186
+      BYTE 186, "                 __  ___  ____   ____ ____   ____ ______  _______             ", 186
+      BYTE 186, "                /  ]/   \|    \ /    |    \ /    |      |/ ___/  |            ", 186
+      BYTE 186, "               /  /|     |  _  |   __|  D  )  o  |      (   \_|  |            ", 186
+      BYTE 186, "              /  / |  O  |  |  |  |  |    /|     |_|  |_|\__  |__|            ", 186
+      BYTE 186, "             /   \_|     |  |  |  |_ |    \|  _  | |  |  /  \ |__             ", 186
+      BYTE 186, "             \     |     |  |  |     |  .  \  |  | |  |  \    |  |            ", 186
+      BYTE 186, "              \____|\___/|__|__|___,_|__|\_|__|__| |__|   \___|__|            ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                               Sua Pontuacao:                                 ", 186
+      BYTE 186, "                                   Your Score:                                ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186; 17 - 36
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
-      BYTE 186, "                             (ENTER) - MENU PRINCIPAL                         ", 186
-      BYTE 186, "                               (ESC) - SAIR                                   ", 186
+      BYTE 186, "                              (ENTER) - MAIN MENU                             ", 186
+      BYTE 186, "                                (ESC) - EXIT GAME                             ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                                                              ", 186
       BYTE 200, 78 DUP(205), 188, 0
@@ -207,8 +207,8 @@ INCLUDE ../Macros.inc
       BYTE 186, "    V    ", 186,"                                                          ", 186,"    D    ", 186 ; 12
       BYTE 186, "    E    ", 186,"                                                          ", 186,"    O    ", 186 ; 13
       BYTE 186, "         ", 186,"                                                          ", 186,"         ", 186 ; 14
-      BYTE 186, "    P    ", 186,"                                                          ", 186,"    H    ", 186 ; 15
-      BYTE 186, "    U    ", 186,"                                                          ", 186,"    T    ", 186 ; 16
+      BYTE 186, "    U    ", 186,"                                                          ", 186,"    T    ", 186 ; 15
+      BYTE 186, "    P    ", 186,"                                                          ", 186,"    H    ", 186 ; 16
       BYTE 186, "    !    ", 186,"                                                          ", 186,"    I    ", 186 ; 17
       BYTE 186, "         ", 186,"                                                          ", 186,"    S    ", 186 ; 18
       BYTE 186, "         ", 186,"                                                          ", 186,"         ", 186 ; 19
