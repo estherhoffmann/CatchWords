@@ -1,6 +1,6 @@
- JOGO_versao1
+ CatchWords
 
- Timestamp is 5c044783 (Sun Dec 02 18:58:43 2018)
+ Timestamp is 5c044926 (Sun Dec 02 19:05:42 2018)
 
  Preferred load address is 00400000
 
@@ -9,7 +9,7 @@
  0001:00002440 00001b6aH .text$mn                CODE
  0002:00000000 00000143H .rdata                  DATA
  0002:00000143 00000000H .edata                  DATA
- 0002:00000144 0000018bH .rdata$debug            DATA
+ 0002:00000144 00000186H .rdata$debug            DATA
  0003:00000000 00005b58H .data                   DATA
  0003:00005b60 00000275H .bss                    DATA
  0004:00000000 000000dcH .idata$5                DATA
@@ -75,21 +75,21 @@
  0001:00000f99       _WriteString@0             00401f99 f   Irvine32:Irvine32.obj
  0001:00000fc5       _WriteToFile@0             00401fc5 f   Irvine32:Irvine32.obj
  0001:00000fda       _WriteWindowsMsg@0         00401fda f   Irvine32:Irvine32.obj
- 0001:00002440       _ClearForNewWord@0         00403440 f   JOGO_versao1.obj
- 0001:0000247f       _SetInfoLevels@0           0040347f f   JOGO_versao1.obj
- 0001:000025b1       _GetRandomNumber@0         004035b1 f   JOGO_versao1.obj
- 0001:0000260a       _GetWord@0                 0040360a f   JOGO_versao1.obj
- 0001:00002699       _GetRandomScreenPosition@0 00403699 f   JOGO_versao1.obj
- 0001:000026e3       _PrintInfoPlayer@0         004036e3 f   JOGO_versao1.obj
- 0001:00002748       _PrintWordLine@0           00403748 f   JOGO_versao1.obj
- 0001:000027a3       _PrintWordMoving@0         004037a3 f   JOGO_versao1.obj
- 0001:00002820       _ReadKeyboard@0            00403820 f   JOGO_versao1.obj
- 0001:00002836       _AddScore@0                00403836 f   JOGO_versao1.obj
- 0001:00002874       _VerifyLetter@0            00403874 f   JOGO_versao1.obj
- 0001:000028bf       _PrintResultWord@0         004038bf f   JOGO_versao1.obj
- 0001:000029b7       _PrintGameLevel@0          004039b7 f   JOGO_versao1.obj
- 0001:00002ae3       _Game@0                    00403ae3 f   JOGO_versao1.obj
- 0001:00002bd7       _main@0                    00403bd7 f   JOGO_versao1.obj
+ 0001:00002440       _ClearForNewWord@0         00403440 f   CatchWords.obj
+ 0001:0000247f       _SetInfoLevels@0           0040347f f   CatchWords.obj
+ 0001:000025b1       _GetRandomNumber@0         004035b1 f   CatchWords.obj
+ 0001:0000260a       _GetWord@0                 0040360a f   CatchWords.obj
+ 0001:00002699       _GetRandomScreenPosition@0 00403699 f   CatchWords.obj
+ 0001:000026e3       _PrintInfoPlayer@0         004036e3 f   CatchWords.obj
+ 0001:00002748       _PrintWordLine@0           00403748 f   CatchWords.obj
+ 0001:000027a3       _PrintWordMoving@0         004037a3 f   CatchWords.obj
+ 0001:00002820       _ReadKeyboard@0            00403820 f   CatchWords.obj
+ 0001:00002836       _AddScore@0                00403836 f   CatchWords.obj
+ 0001:00002874       _VerifyLetter@0            00403874 f   CatchWords.obj
+ 0001:000028bf       _PrintResultWord@0         004038bf f   CatchWords.obj
+ 0001:000029b7       _PrintGameLevel@0          004039b7 f   CatchWords.obj
+ 0001:00002ae3       _Game@0                    00403ae3 f   CatchWords.obj
+ 0001:00002bd7       _main@0                    00403bd7 f   CatchWords.obj
  0001:00002ed8       _ExitProcess@4             00403ed8 f   Kernel32:KERNEL32.dll
  0001:00002ede       _SetFilePointer@16         00403ede f   Kernel32:KERNEL32.dll
  0001:00002ee4       _CloseHandle@4             00403ee4 f   Kernel32:KERNEL32.dll
