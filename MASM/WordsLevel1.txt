@@ -10,7 +10,6 @@ bom
 rol
 mas
 elo
-mae
 luz
 ato
 dor

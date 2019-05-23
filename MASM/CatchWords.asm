@@ -1,3 +1,7 @@
+; Students:
+; Esther Calderan Hoffmann RA: 743529
+; Bruna Fernandes Prates   RA: 743513
+
 INCLUDE ../Irvine32.inc
 INCLUDE ../Macros.inc
 
@@ -7,7 +11,7 @@ INCLUDE ../Macros.inc
 .data
   Menu BYTE 201, 78 DUP(205), 187
   	   BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
+       BYTE 186, "                                                                              ", 186
   	   BYTE 186, "        __  ____ ______   __ __ __      __    __  ___  ____  ___   _____      ", 186
   	   BYTE 186, "       /  ]/    |      | /  |  |  |    |  |__|  |/   \|    \|   \ / ___/      ", 186
   	   BYTE 186, "      /  /|  o  |      |/  /|  |  |    |  |  |  |     |  D  |    (   \_       ", 186
@@ -15,20 +19,20 @@ INCLUDE ../Macros.inc
   	   BYTE 186, "    /   \_|  _  | |  |/   \_|  |  |    |  `  '  |     |    \|     /  \ |      ", 186
   	   BYTE 186, "    \     |  |  | |  |\     |  |  |     \      /|     |  .  |     \    |      ", 186
        BYTE 186, "     \____|__|__| |__| \____|__|__|      \_/\_/  \___/|__|\_|_____|\___|      ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                    Choose:                                   ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                               (ENTER) - PLAY                                 ", 186
-  		 BYTE 186, "                               (SPACE) - INSTRUCTIONS                         ", 186
-  		 BYTE 186, "                                 (ESC) - EXIT                                 ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 186, "                                                                              ", 186
-  		 BYTE 200, 78 DUP(205), 188, 0
+  	   BYTE 186, "                                                                              ", 186
+       BYTE 186, "                                                                              ", 186
+  	   BYTE 186, "                                                                              ", 186
+       BYTE 186, "                                                                              ", 186
+       BYTE 186, "                                    Choose:                                   ", 186
+       BYTE 186, "                                                                              ", 186
+  	   BYTE 186, "                               (ENTER) - PLAY                                 ", 186
+  	   BYTE 186, "                               (SPACE) - INSTRUCTIONS                         ", 186
+       BYTE 186, "                                 (ESC) - EXIT                                 ", 186
+  	   BYTE 186, "                                                                              ", 186
+  	   BYTE 186, "                                                                              ", 186
+  	   BYTE 186, "                                                                              ", 186
+  	   BYTE 186, "                                                                              ", 186
+  	   BYTE 200, 78 DUP(205), 188, 0
   RULES BYTE 201, 78 DUP(205), 187
       BYTE 186, "                                                                              ", 186
       BYTE 186, "                                 INSTRUCTIONS:                                ", 186
@@ -299,7 +303,7 @@ case0:
               ADDR fileName
     mov SizeLevel, 5
     mov SizeWord, 3
-    mov SizeOfFile, 241
+    mov SizeOfFile, 237
     mov BytesToRead, 3
     mov NumOfWords, 10
     jmp break
@@ -309,13 +313,13 @@ case1:
               ADDR fileName
     mov SizeLevel, 6
     mov SizeWord, 4
-    mov SizeOfFile, 336
+    mov SizeOfFile, 331
     mov BytesToRead, 4
     cmp SpecialWord, 1
     je break
     mov NumOfWords, 7
     jmp break
-case2:                                    ;                 /troca r <<<<<<<<<<<
+case2:
     INVOKE Str_copy,
               ADDR fileLevel3,
               ADDR fileName
@@ -382,7 +386,7 @@ GetRandomNumber ENDP
 
 
 
-;   /GETWORD PROC -> PEGA A PALAVRA DA VEZ
+
 GetWord PROC
     push ECX
     ; To open file
@@ -752,7 +756,6 @@ EndPrintResultWord:
 PrintResultWord ENDP
 
 
-;     PrintGameLevel PROC -> PRINTA O JOGO ATIVO
 PrintGameLevel PROC
   push ECX
   push EDX
@@ -820,12 +823,7 @@ BeforeSpecial:
   mov EAX, 3000
   call Delay
 
-
-
 EndLevel:
-  ;mov  dl, 1  ;column
-  ;mov  dh,24  ;row
-  ;call Gotoxy
   mov WordPosition, 0
   mov CurrentNum, 0
   pop EAX
@@ -835,8 +833,6 @@ EndLevel:
 PrintGameLevel ENDP
 
 
-
-;    GAME PROC -> CHAMA AS FUNÇÕES
 Game PROC
     call ClrScr
     mov EDX, OFFSET NextLevel
@@ -910,7 +906,6 @@ EndGame:
 Game ENDP
 
 
-;     /MAIN -> CHAMA GAME PROC
 main PROC
 ReturnToMenu:
     call ClrScr
@@ -942,7 +937,6 @@ TryResultScreen:
     jne LookForKey
 
     mov MenuChoice, 0
-    ; Clear ALL VARIABLES -----------------------------------------------<<<<<<<<
     mov Level, 0
     mov CurrentNum, 0
     mov StatusWord, 0
@@ -978,8 +972,6 @@ TryEscape:
     jmp LookForKey
     call DumpRegs
     call WaitMsg
-    ;call Game
-    ;call CRLF
 
 ExitGame:
     exit

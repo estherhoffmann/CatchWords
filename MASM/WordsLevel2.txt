@@ -29,7 +29,6 @@ dois
 flor
 raiz
 show
-tabu
 ilha
 leve
 fogo

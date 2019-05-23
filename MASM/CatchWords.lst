@@ -1,7 +1,11 @@
-Microsoft (R) Macro Assembler Version 12.00.21005.1	    12/02/18 20:36:23
+Microsoft (R) Macro Assembler Version 12.00.21005.1	    12/04/18 15:09:03
 CatchWords.asm						     Page 1 - 1
 
 
+				; Students:
+				; Esther Calderan Hoffmann RA: 743529
+				; Bruna Fernandes Prates   RA: 743513
+				
 				INCLUDE ../Irvine32.inc
 			      C ; Include file for Irvine32.lib             (Irvine32.inc)
 			      C 
@@ -49,7 +53,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000000A0  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 000000A0  BA 20 20 20 20	       BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -177,7 +181,7 @@ CatchWords.asm						     Page 1 - 1
 	   5F 5F 7C 5C 5F
 	   5F 5F 7C 20 20
 	   20 20 20 20 BA
- 00000320  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 00000320  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -193,7 +197,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000370  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 00000370  BA 20 20 20 20	       BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -209,7 +213,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000003C0  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 000003C0  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -225,7 +229,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000410  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 00000410  BA 20 20 20 20	       BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -241,7 +245,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000460  BA 20 20 20 20	  		 BYTE 186, "                                    Choose:                                   ", 186
+ 00000460  BA 20 20 20 20	       BYTE 186, "                                    Choose:                                   ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -257,7 +261,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000004B0  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 000004B0  BA 20 20 20 20	       BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -273,7 +277,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000500  BA 20 20 20 20	  		 BYTE 186, "                               (ENTER) - PLAY                                 ", 186
+ 00000500  BA 20 20 20 20	  	   BYTE 186, "                               (ENTER) - PLAY                                 ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -289,7 +293,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000550  BA 20 20 20 20	  		 BYTE 186, "                               (SPACE) - INSTRUCTIONS                         ", 186
+ 00000550  BA 20 20 20 20	  	   BYTE 186, "                               (SPACE) - INSTRUCTIONS                         ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -305,7 +309,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000005A0  BA 20 20 20 20	  		 BYTE 186, "                                 (ESC) - EXIT                                 ", 186
+ 000005A0  BA 20 20 20 20	       BYTE 186, "                                 (ESC) - EXIT                                 ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -321,7 +325,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000005F0  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 000005F0  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -337,7 +341,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000640  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 00000640  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -353,7 +357,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000690  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 00000690  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -369,7 +373,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 000006E0  BA 20 20 20 20	  		 BYTE 186, "                                                                              ", 186
+ 000006E0  BA 20 20 20 20	  	   BYTE 186, "                                                                              ", 186
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 20
@@ -385,7 +389,7 @@ CatchWords.asm						     Page 1 - 1
 	   20 20 20 20 20
 	   20 20 20 20 20
 	   20 20 20 20 BA
- 00000730  C8			  		 BYTE 200, 78 DUP(205), 188, 0
+ 00000730  C8			  	   BYTE 200, 78 DUP(205), 188, 0
 	   0000004E [
 	    CD
 	   ] BC 00
@@ -3308,8 +3312,8 @@ CatchWords.asm						     Page 1 - 1
 	   00000005
  00000076  C7 05 0000425F R	    mov SizeWord, 3
 	   00000003
- 00000080  C7 05 00004263 R	    mov SizeOfFile, 241
-	   000000F1
+ 00000080  C7 05 00004263 R	    mov SizeOfFile, 237
+	   000000ED
  0000008A  C7 05 0000424D R	    mov BytesToRead, 3
 	   00000003
  00000094  C6 05 000042B5 R	    mov NumOfWords, 10
@@ -3323,8 +3327,8 @@ CatchWords.asm						     Page 1 - 1
 	   00000006
  000000B9  C7 05 0000425F R	    mov SizeWord, 4
 	   00000004
- 000000C3  C7 05 00004263 R	    mov SizeOfFile, 336
-	   00000150
+ 000000C3  C7 05 00004263 R	    mov SizeOfFile, 331
+	   0000014B
  000000CD  C7 05 0000424D R	    mov BytesToRead, 4
 	   00000004
  000000D7  80 3D 000042B4 R	    cmp SpecialWord, 1
@@ -3333,7 +3337,7 @@ CatchWords.asm						     Page 1 - 1
  000000E4  C6 05 000042B5 R	    mov NumOfWords, 7
 	   07
  000000EB  E9 00000080		    jmp break
- 000000F0			case2:                                    ;                 /troca r <<<<<<<<<<<
+ 000000F0			case2:
 				    INVOKE Str_copy,
 				              ADDR fileLevel3,
 				              ADDR fileName
@@ -3410,7 +3414,7 @@ CatchWords.asm						     Page 1 - 1
 				
 				
 				
-				;   /GETWORD PROC -> PEGA A PALAVRA DA VEZ
+				
  000001CA			GetWord PROC
  000001CA  51			    push ECX
 				    ; To open file
@@ -3816,7 +3820,6 @@ CatchWords.asm						     Page 1 - 1
  00000577			PrintResultWord ENDP
 				
 				
-				;     PrintGameLevel PROC -> PRINTA O JOGO ATIVO
  00000577			PrintGameLevel PROC
  00000577  51			  push ECX
  00000578  52			  push EDX
@@ -3826,7 +3829,7 @@ CatchWords.asm						     Page 1 - 1
  00000581  83 E9 02		  sub ECX, 2
  00000584			BeforeSpecial:
  00000584  FE 05 000042B6 R	  inc CurrentNum
- 0000058A  80 3D 000042AF R  cmp StatusWord, 2
+ 0000058A  80 3D 000042AF R	  cmp StatusWord, 2
 	   02
  00000591  0F 84 000000F7	  je EndLevel
  00000597  E8 00000000 E	  call ClrScr
@@ -3890,12 +3893,7 @@ CatchWords.asm						     Page 1 - 1
  00000684  B8 00000BB8		  mov EAX, 3000
  00000689  E8 00000000 E	  call Delay
 				
-				
-				
  0000068E			EndLevel:
-				  ;mov  dl, 1  ;column
-				  ;mov  dh,24  ;row
-				  ;call Gotoxy
  0000068E  C7 05 0000428F R	  mov WordPosition, 0
 	   00000000
  00000698  C6 05 000042B6 R	  mov CurrentNum, 0
@@ -3907,8 +3905,6 @@ CatchWords.asm						     Page 1 - 1
  000006A3			PrintGameLevel ENDP
 				
 				
-				
-				;    GAME PROC -> CHAMA AS FUNÇÕES
  000006A3			Game PROC
  000006A3  E8 00000000 E	    call ClrScr
  000006A8  BA 00000F02 R	    mov EDX, OFFSET NextLevel
@@ -3985,7 +3981,6 @@ CatchWords.asm						     Page 1 - 1
  00000797			Game ENDP
 				
 				
-				;     /MAIN -> CHAMA GAME PROC
  00000797			main PROC
  00000797			ReturnToMenu:
  00000797  E8 00000000 E	    call ClrScr
@@ -4021,7 +4016,6 @@ CatchWords.asm						     Page 1 - 1
 				
  000007E7  C6 05 000042B7 R	    mov MenuChoice, 0
 	   00
-				    ; Clear ALL VARIABLES -----------------------------------------------<<<<<<<<
  000007EE  C7 05 00004293 R	    mov Level, 0
 	   00000000
  000007F8  C6 05 000042B6 R	    mov CurrentNum, 0
@@ -4065,14 +4059,12 @@ CatchWords.asm						     Page 1 - 1
  00000863  E9 FFFFFF48		    jmp LookForKey
  00000868  E8 00000000 E	    call DumpRegs
  0000086D  E8 00000000 E	    call WaitMsg
-				    ;call Game
-				    ;call CRLF
 				
  00000872			ExitGame:
 				    exit
  00000879			main ENDP
 				END main
-Microsoft (R) Macro Assembler Version 12.00.21005.1	    12/02/18 20:36:23
+Microsoft (R) Macro Assembler Version 12.00.21005.1	    12/04/18 15:09:03
 CatchWords.asm						     Symbols 2 - 1
 
 
